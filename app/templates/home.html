@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Archive API</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            background:#202124;
+            color:white;
+            font-family:Arial, Helvetica, sans-serif;
+            min-height:100vh;
+
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+
+        .container{
+            text-align:center;
+            max-width:700px;
+        }
+
+        h1{
+            font-size:3rem;
+            margin-bottom:20px;
+        }
+
+        p{
+            font-size:1.2rem;
+            color:#d0d0d0;
+            margin-bottom:40px;
+        }
+
+        .buttons{
+            display:flex;
+            justify-content:center;
+            gap:20px;
+            flex-wrap:wrap;
+        }
+
+        a{
+            text-decoration:none;
+        }
+
+        .btn{
+            background:#769656;
+            color:white;
+            padding:15px 30px;
+            border-radius:10px;
+            font-size:18px;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            transform:translateY(-3px);
+        }
+
+        .footer{
+            margin-top:40px;
+            color:#999;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>♟ Chess Archive API</h1>
+
+    <p>
+        Import Chess.com games, store PGNs,
+        analyze performance and replay games
+        using the built-in PGN Viewer.
+    </p>
+
+    <div class="buttons">
+
+        <a href="/docs">
+            <div class="btn">
+                📚 Open API Docs
+            </div>
+        </a>
+
+        <a href="/viewer">
+            <div class="btn">
+                ♟ Open PGN Viewer
+            </div>
+        </a>
+
+    </div>
+
+    <div class="footer">
+
+        FastAPI • SQLite • Chess.com API
+
+    </div>
+
+</div>
+
+</body>
+</html>

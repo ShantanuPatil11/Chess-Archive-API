@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess PGN Viewer</title>
+
+    <link rel="stylesheet"
+href="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css">
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>♟ Chess PGN Viewer</h1>
+        <p>Paste any PGN and replay the game move by move</p>
+    </div>
+
+    <div class="content">
+
+        <div class="left-panel">
+
+            <h2>PGN Input</h2>
+
+            <textarea
+                id="pgnInput"
+                placeholder="Paste PGN here..."></textarea>
+
+            <button onclick="loadGame()">
+                Load Game
+            </button>
+
+            <div class="move-counter">
+                Move:
+                <span id="moveNumber">0</span>
+                /
+                <span id="totalMoves">0</span>
+            </div>
+
+        </div>
+
+        <div class="right-panel">
+
+            <div id="board"></div>
+
+            <div class="controls">
+
+                <button onclick="firstMove()">⏮</button>
+
+                <button onclick="previousMove()">◀</button>
+
+                <button onclick="nextMove()">▶</button>
+
+                <button onclick="lastMove()">⏭</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"></script>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
