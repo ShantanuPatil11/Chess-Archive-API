@@ -137,11 +137,11 @@ http://127.0.0.1:8000/viewer
 
 ## 🔮 Future Improvements
 
-- Opening statistics
-- Win-rate analysis
-- Game search filters
-- Player comparison dashboard
-- Export analytics reports
+- Automated daily game imports with APScheduler
+- Email notifications for upset wins
+- Opening statistics dashboard
+- Player comparison analytics
+- Cloud deployment
 
 ---
 
